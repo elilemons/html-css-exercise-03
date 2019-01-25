@@ -1,0 +1,48 @@
+/* Reset CSS */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; }
+/* Goofy borders around everything to help us see the layout. */
+* {
+    border: 2px solid cornflowerblue;
+    margin: 5px;
+    padding: 3px;
+}
+    /* body takes up full viewport and extends all the way to the edges. */
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {
+    height: 100vh;
+}
+/* Layout */
+.flex-container, .nav-items {
+    display: flex;
+}
+.flex-container {
+    justify-content: space-between;
+    align-items:center;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 75%;
+}
+.sidebar {
+    flex: 1 1 25%;
+}
+.nav-items {
+    align-items: center;
+}
+.title {
+    flex-grow: 1;
+}
+.photo {
+    max-width: 30%;
+}
+.facts {
+    list-style: none;
+}
